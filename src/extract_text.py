@@ -1,22 +1,22 @@
-import dataclasses
 import json
 import os
 
-# import cv2
-# import numpy as np
 import easyocr
 
 
 class ExtractTextHandler:
+    """
+    All operation for the text extraction is handled in this class
+    """
     def __init__(self, input_path: str, output_path: str):
         self.input_path = input_path
         self.output_path = output_path
         self.reader = easyocr.Reader(['en'])
 
-    def get_image_path(self, image_name):
+    def get_image_path(self, image_name:str):
         return os.path.join(self.input_path, image_name)
 
-    def extract_text(self, img)->str:
+    def extract_text(self, img:str)->str:
         results = self.reader.readtext(image = img)
         text_output = ''
         for result in results:
@@ -42,7 +42,6 @@ def extract_text(config:dict):
             if result in text_putput:
                 continue
             text_putput.append(result)
-        # OutputText.from_dict({'Text':text_putput})
         with open(output_name+'.json', 'w+') as f:
             json.dump({'Text':text_putput},f, indent=4)
 

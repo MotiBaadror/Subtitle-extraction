@@ -8,7 +8,7 @@ class PreprocessHandler():
         self.output_path = output_path
         self.frame_after_second = frame_after_second
 
-    def preprocess(self,video_name:str, file_type):
+    def preprocess(self,video_name:str, file_type:str):
         video_path = os.path.join(self.input_path,f'{video_name}.{file_type}')
         save_dir_path = os.path.join(self.output_path,video_name)
         os.makedirs(save_dir_path, exist_ok= True)
