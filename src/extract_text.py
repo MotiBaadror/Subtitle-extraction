@@ -6,8 +6,6 @@ import os
 # import numpy as np
 import easyocr
 
-from configs.configs import OutputText
-
 
 class ExtractTextHandler:
     def __init__(self, input_path: str, output_path: str):
