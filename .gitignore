@@ -3,3 +3,4 @@ data
 src/__pycache__/
 __pycache__/
 ffmpeg-master-latest-win64-gpl-shared
+myenv
