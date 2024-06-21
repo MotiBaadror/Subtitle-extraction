@@ -1,5 +1,10 @@
 ### Subtitle Extractor 
 
+**Results for the two videos given are there in the `results` folder** 
+
+
+#### How to run locally
+
 1. Make python environment  
  `python -m venv ocr_env `   
 2. activate env
@@ -19,6 +24,6 @@
 4. Copy results from docker to local directory `docker cp {container_id}/app/data/output_texts/ my_result_folder`
 
 
-Read more thought about the solutions [here](https:myname.com)
+Read more thought about the solutions [here](https://docs.google.com/document/d/1k-WvkqYnf0p7lPWK2pc4j8NpJsFoUBJ2AkF-xmK1jfA/edit?usp=sharing)
 
    
