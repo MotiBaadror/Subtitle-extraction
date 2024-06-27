@@ -24,6 +24,5 @@
 4. Copy results from docker to local directory `docker cp {container_id}/app/data/output_texts/ my_result_folder`
 
 
-Read more thought about the solutions [here](https://docs.google.com/document/d/1k-WvkqYnf0p7lPWK2pc4j8NpJsFoUBJ2AkF-xmK1jfA/edit?usp=sharing)
 
    
