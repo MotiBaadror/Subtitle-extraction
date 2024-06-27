@@ -1,16 +1,16 @@
 import os
 
-from extract_text import extract_text
+from eval_ocr import process_eval_ocr
 from dir_configs import add_rootpath
 
 if __name__ =='__main__':
-    input_path = add_rootpath('data/preprocess')
-    output_path = add_rootpath('data/output_texts_easyocr')
+    input_path = add_rootpath('data/output')
+    output_path = add_rootpath('data/eval')
     os.makedirs(output_path, exist_ok= True)
     config = {
         'input_path': input_path,
         'output_path':output_path,
-        'ocrtype':'easy_ocr'
+        # 'frame_after_second': 30
     }
 
-    extract_text(config)
+    process_eval_ocr(config)
