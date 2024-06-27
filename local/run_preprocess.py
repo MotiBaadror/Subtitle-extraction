@@ -5,12 +5,12 @@ from dir_configs import add_rootpath
 
 if __name__ =='__main__':
     input_path = add_rootpath('data/input_videos')
-    output_path = add_rootpath('data/preprocess')
+    output_path = add_rootpath('data/preprocess_sample')
     os.makedirs(output_path, exist_ok= True)
     config = {
         'input_path': input_path,
         'output_path':output_path,
-        'frame_after_second': 2
+        'frame_after_second': 30
     }
 
     preprocess_videos(config)
